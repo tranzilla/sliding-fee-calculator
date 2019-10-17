@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Calculator
+{% endblock %}
+
+{% block content %}
+    <h1>SF Calculator</h1>
+    <p class="important">
+      Welcome to my page.
+    </p>
+
+    <p>
+      {% for slidingscale in data %}
+      {{ slidingscale.scale }}
+      {% endfor %}
+
+    </p>
+{% endblock %}
